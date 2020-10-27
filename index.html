@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Fee Calculator</title>
+</head>
+<body>
+    <form name="f">
+        <table>
+            <tr>
+                <td colspan=2 class="hdr">eBay selling fees calculator</td>
+            </tr>
+            <tr>
+                <td colspan=2 class="txt">A simple way to calculate your ebay & paypal fees.</td>
+            </tr>
+              <tr>
+                <td class="rcvd_tr">
+                     Item sold price &larr;
+                </td>
+                <td>
+                     $<input class="text_box" type="text" id="fp_sold_price_rcvd" onblur=calculate_fees();>
+                </td>              
+           </tr>
+           <tr>
+                <td class="rcvd_tr">
+                     Shipping price charged &larr;
+                </td>
+                <td>
+                     $<input class="text_box" type="text" id="fp_ship_price_rcvd" onblur=calculate_fees();>
+                </td>              
+           </tr>
+           <tr>
+                <td class="paid_tr">
+                     Cost to purchase &rarr;
+                </td>
+                <td>
+                     $<input class="text_box" type="text" id="fp_purchase_price_paid" onblur=calculate_fees();>
+                </td>              
+           </tr>
+           <tr>
+                <td class="paid_tr">
+                     Actual shipping price &rarr;
+                </td>
+                <td>
+                     $<input class="text_box" type="text" id="fp_ship_price_paid" onblur=calculate_fees();>
+                </td>              
+           </tr>            
+          <tr>
+          <td class="subhdr">Your fees</td>
+          </tr>
+               <tr>
+                    <td>
+                         Listing fees
+                    </td>
+                    <td>
+                         $<input class="text_box_read" readonly="readonly" type="text" id="listing_fees">
+                    </td>              
+               </tr>
+               <tr>
+                    <td>
+                         Final value (sold) fees
+                    </td>
+                    <td>
+                         $<input class="text_box_read" readonly="readonly" type="text" id="fvf_fees">
+                    </td>              
+               </tr>
+               <tr>
+                    <td>
+                         PayPal fees
+                    </td>
+                    <td>
+                         $<input class="text_box_read" readonly="readonly" type="text" id="paypal_fees">
+                    </td>              
+               </tr>              
+               <tr>
+                    <td>
+                         Total fees
+                    </td>
+                    <td>
+                         $<input class="text_box_read" readonly="readonly" type="text" id="total_fees">
+                    </td>              
+               </tr>
+               <tr>	
+                    <td>
+                         Profit
+                    </td>
+                    <td>
+                         $<input class="text_box_read" readonly="readonly"  type="text" id="profit" style="color:green">
+                    </td>              
+               </tr>         
+          </table>
+          <br/>
+        <div class="share">
+         <!-- Place this tag where you want the +1 button to render -->
+        
+        <span st_url='{Permalink}' st_title='{Title}' class='st_sharethis_large' displayText='ShareThis'></span><span st_url='{Permalink}' st_title='{Title}' class='st_facebook_large' displayText='Facebook'></span><span st_url='{Permalink}' st_title='{Title}' class='st_twitter_large' displayText='Tweet'></span><span st_url='{Permalink}' st_title='{Title}' class='st_linkedin_large' displayText='LinkedIn'></span><span st_url='{Permalink}' st_title='{Title}' class='st_email_large' displayText='Email'> </span>&nbsp;&nbsp;<g:plusone annotation="inline"></g:plusone>
+        </div>
+         </body>
+         </form>
+</body>
+</html>
