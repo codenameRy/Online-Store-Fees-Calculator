@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Online Shopping Fee Calculator</title>
 </head>
 <body>
     <form name="f">
         <table>
             <tr>
-                <td colspan=2 class="hdr">eBay selling fees calculator</td>
+               <img src="/images/depop-logo.jpg" alt="" class="depop_image"> 
+               <td colspan=2 class="hdr">Depop selling fees calculator</td>
             </tr>
             <tr>
-                <td colspan=2 class="txt">A simple way to calculate your ebay & paypal fees.</td>
+                <td colspan=2 class="txt">A simple way to calculate your Depop & paypal fees.</td>
             </tr>
               <tr>
                 <td class="rcvd_tr">
                      Item sold price &larr;
                 </td>
                 <td>
-                     $<input class="text_box" type="text" id="fp_sold_price_rcvd" onblur=calculate_fees();>
+                     $<input class="text_box" type="text" id="finalprice_sold_price_received" onblur=calculate_fees();>
                 </td>              
            </tr>
            <tr>
@@ -27,7 +29,7 @@
                      Shipping price charged &larr;
                 </td>
                 <td>
-                     $<input class="text_box" type="text" id="fp_ship_price_rcvd" onblur=calculate_fees();>
+                     $<input class="text_box" type="text" id="finalprice_ship_price_received" onblur=calculate_fees();>
                 </td>              
            </tr>
            <tr>
@@ -47,7 +49,7 @@
                 </td>              
            </tr>            
           <tr>
-          <td class="subhdr">Your fees</td>
+          <td class="subhdr"><br>Your fees</td>
           </tr>
                <tr>
                     <td>
@@ -62,7 +64,7 @@
                          Final value (sold) fees
                     </td>
                     <td>
-                         $<input class="text_box_read" readonly="readonly" type="text" id="fvf_fees">
+                         $<input class="text_box_read" readonly="readonly" type="text" id="final_value_sold_fees">
                     </td>              
                </tr>
                <tr>
@@ -98,5 +100,6 @@
         </div>
          </body>
          </form>
+         <script src="js/ebay-fees-calc.js"></script>
 </body>
 </html>
