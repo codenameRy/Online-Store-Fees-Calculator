@@ -1,4 +1,55 @@
 .depop_image {
-    width: 15%;
-    height: 15%;
+  width: 15%;
+  height: 15%;
+}
+
+.hdr {
+  font-family: "HelveticaNeue-Light", Arial;
+  color: #666666;
+  font-size: 26px;
+  padding: 0 0 0 0;
+}
+.txt {
+  font-family: "HelveticaNeue-Light", Arial;
+  color: #666666;
+  font-size: 13px;
+  padding: 0 0 20 5;
+}
+.subhdr {
+  font-family: "HelveticaNeue-Light", Arial;
+  color: #666666;
+  font-size: 22px;
+  padding: 10 0 5 0;
+}
+table {
+  border: 0px solid black;
+  width: 350px;
+  padding: 0 0 0 10;
+}
+td {
+  font-family: "HelveticaNeue-Light" Arial;
+  color: #666666;
+  font-size: 18px;
+}
+.text_box {
+  width: 100px;
+  height: 26px;
+  padding: 1px;
+  font-size: 20px;
+}
+.text_box_read {
+  border: 0;
+  width: 100px;
+  height: 26px;
+  padding: 1px;
+  font-size: 20px;
+}
+.rcvd_tr {
+  color: green;
+}
+.paid_tr {
+  color: orange;
+}
+.share {
+  padding: 20 10 10 10;
 }
